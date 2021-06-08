@@ -1,6 +1,6 @@
 node{
     stage('clone repo'){
-        https://github.com/florian-ionescu/test-jenkins-pipeline.git'
+        git 'https://github.com/florian-ionescu/test-jenkins-pipeline.git'
     }
     stage('print files in repo'){
         sh 'ls -l'
