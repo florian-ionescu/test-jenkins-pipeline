@@ -6,6 +6,6 @@ node{
         sh 'ls -l'
     }
     stage('email'){
-        emailext body: 'Pipeline succesffuly failed completed!! :)', subject: 'Jenkins Pipeline succesffuly completed!!', to: 'florian.ionescu@tutamail.com'
+        emailext body: 'Pipeline succesffuly failed completed!! :)', subject: 'Jenkins Pipeline succesffuly completed!!', to: 'nicolas.delflores1@gmail.com'
     }
 }
