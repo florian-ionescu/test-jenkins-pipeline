@@ -1,0 +1,11 @@
+node{
+    stage('clone repo'){
+        git branch: 'main', url: 'https://github.com/florian-ionescu/test-jenkins-pipeline.git'
+    }
+    stage('print files in repo'){
+        sh 'ls -l'
+    }
+    stage('email'){
+        emailext body: 'Pipeline succesffuly failed completed!! :)', subject: 'Jenkins Pipeline succesffuly completed!!', to: 'florian.ionescu@tutamail.com'
+    }
+}
