@@ -1,0 +1,8 @@
+node{
+    stage('clone repo'){
+        git 'https://github.com/florian-ionescu/python-learning'
+    }
+    stage('print files in repo'){
+        sh 'ls -l'
+    }
+}
